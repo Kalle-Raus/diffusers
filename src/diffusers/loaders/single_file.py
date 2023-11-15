@@ -207,6 +207,8 @@ class FromSingleFileMixin:
         elif "StableDiffusion" in pipeline_name:
             # Model type will be inferred from the checkpoint.
             pass
+        elif "AdPipeline" in pipeline_name:
+            pass
         elif pipeline_name == "StableUnCLIPPipeline":
             model_type = "FrozenOpenCLIPEmbedder"
             stable_unclip = "txt2img"
